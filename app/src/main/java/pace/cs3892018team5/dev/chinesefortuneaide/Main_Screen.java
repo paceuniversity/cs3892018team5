@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TableLayout;
 
-public class Main_Screen extends AppCompatActivity implements  Tab1.OnFragmentInteractionListener,Tab2.OnFragmentInteractionListener,Tab3.OnFragmentInteractionListener, Tab4.OnFragmentInteractionListener{
+public class Main_Screen extends AppCompatActivity implements  Tab1.OnFragmentInteractionListener,Tab2.OnFragmentInteractionListener,Tab3.OnFragmentInteractionListener, Tab4.OnFragmentInteractionListener, Tab5.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,10 +17,13 @@ public class Main_Screen extends AppCompatActivity implements  Tab1.OnFragmentIn
 
 
         TabLayout tabLayout = (TabLayout)findViewById(R.id.tablayout);
-        tabLayout.addTab(tabLayout.newTab().setText("Fortune "));
-        tabLayout.addTab(tabLayout.newTab().setText("Word "));
-        tabLayout.addTab(tabLayout.newTab().setText("Fact"));
+        tabLayout.addTab(tabLayout.newTab().setText("MainScreen"));
+        tabLayout.addTab(tabLayout.newTab().setText("Fortune"));
+        tabLayout.addTab(tabLayout.newTab().setText("Words"));
+        tabLayout.addTab(tabLayout.newTab().setText("Facts"));
         tabLayout.addTab(tabLayout.newTab().setText("Quiz"));
+
+
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager)findViewById(R.id.pager);
