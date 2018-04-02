@@ -1,15 +1,44 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="pace.cs3892018team5.dev.chinesefortuneaide.Tab2">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width = "wrap_content"
+    <Button
+        android:id="@+id/btnInter"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quiz"
-        android:layout_centerInParent="true"
-        android:textSize = "30dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="189dp"
+        android:text="Intermediate" />
 
-</FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnDifficult"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="22dp"
+        android:text="Quiz"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnDifficult"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:text="Difficult" />
+
+    <Button
+        android:id="@+id/btnEasy"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:text="Easy" />
+
+</RelativeLayout>

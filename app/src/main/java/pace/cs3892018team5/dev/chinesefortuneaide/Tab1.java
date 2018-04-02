@@ -1,12 +1,14 @@
 package pace.cs3892018team5.dev.chinesefortuneaide;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 
 /**
@@ -26,6 +28,7 @@ public class Tab1 extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    public ImageButton but1;
 
     private OnFragmentInteractionListener mListener;
 
@@ -51,13 +54,29 @@ public class Tab1 extends Fragment {
         return fragment;
     }
 
+public void nextScreen(){
+
+        but1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ImageButton button = (ImageButton) view.findViewById(R.id.btnfortune);
+
+                startActivity(new Intent(getActivity(), Fortunetab.class));
+            }
+        });
+
+}
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        nextScreen();
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
         }
+
     }
 
     @Override
