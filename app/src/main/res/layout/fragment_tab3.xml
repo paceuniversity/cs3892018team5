@@ -1,15 +1,36 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="pace.cs3892018team5.dev.chinesefortuneaide.Tab3">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width = "wrap_content"
+
+    <RelativeLayout
+        android:id="@+id/word"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Words"
-        android:layout_centerInParent="true"
-        android:textSize = "30dp"/>
+        android:background="@drawable/backgroud">
+
+        <TextView
+            android:id="@+id/textViewCHS3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chinese:跑"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            tools:layout_editor_absoluteX="144dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textViewENG3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="English:Run"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+    </RelativeLayout>
 
 </FrameLayout>
