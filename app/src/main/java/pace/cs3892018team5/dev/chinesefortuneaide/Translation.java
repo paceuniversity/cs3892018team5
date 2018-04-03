@@ -3,13 +3,13 @@ package pace.cs3892018team5.dev.chinesefortuneaide;
 import java.util.ArrayList;
 
 
-public class Translation {
+public class Translation extends Fortunes {
     public ArrayList<Fortunes> myFortunes;
 
 
     public  Translation()
     {
-
+        super("", "");
 
     }
 

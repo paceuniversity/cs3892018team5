@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import java.util.Random;
 
 
 /**
@@ -74,6 +75,7 @@ public class Tab2 extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_tab2, container, false);
         ImageButton myButton = view.findViewById(R.id.btnFortune);
+        Translation translationObject = new Translation();
 
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,7 +91,10 @@ public class Tab2 extends Fragment {
                             }
                         });
                 AlertDialog alert = a_builder.create();
-                alert.setTitle("Today will be a good day");
+                String[] fortune = {"Today will be a good day", "There will be a happy romance for you shortly", "Good news from afar may bring you a welcome visitor"};
+                Random ranNum = new Random();
+                int index = ranNum.nextInt(2);
+                alert.setTitle(fortune[index]);
                 alert.show();
             }
         }
