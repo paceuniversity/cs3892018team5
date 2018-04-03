@@ -13,24 +13,12 @@
         android:layout_height="wrap_content"
         android:background="@drawable/backgroud">
 
-        <TextView
-            android:id="@+id/textViewCHS3"
+        <ListView
+            android:id="@+id/list_word"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Chinese:跑"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            tools:layout_editor_absoluteX="144dp"
-            tools:layout_editor_absoluteY="0dp" />
-
-        <TextView
-            android:id="@+id/textViewENG3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:text="English:Run"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="0dp" />
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
     </RelativeLayout>
 
 </FrameLayout>

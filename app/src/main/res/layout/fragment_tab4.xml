@@ -7,10 +7,8 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
-        android:id="@+id/textViewFact"
+    <ListView
+        android:id="@+id/list_fact"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fact"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        android:layout_height="match_parent" />
 </FrameLayout>
