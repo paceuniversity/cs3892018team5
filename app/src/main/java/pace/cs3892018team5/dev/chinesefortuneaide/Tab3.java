@@ -7,6 +7,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -22,6 +28,8 @@ public class Tab3 extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -58,13 +66,29 @@ public class Tab3 extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_tab3, container, false);
+
+        String[] word = {"跑", "Run","走","Walk","飞","Fly","跳","Jump","想","Think","读","Read"};
+
+        ListView listWord = view.findViewById(R.id.list_word);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, word);
+
+        listWord.setAdapter(adapter);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab3, container, false);
+        return view;
+
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
