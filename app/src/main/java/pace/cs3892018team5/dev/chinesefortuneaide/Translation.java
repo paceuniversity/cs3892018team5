@@ -13,7 +13,7 @@ public class Translation extends Fortunes {
 
     }
 
-
+//Fortune Class
     public void setFortune()
     {
         myFortunes.add(new Fortunes("There will be a happy romance for you shortly", "\n" +
