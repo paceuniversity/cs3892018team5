@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/spalsh_background"
     tools:context=".HomeActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/splash"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="87dp"
-        android:layout_marginTop="86dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        />
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cookie"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="28dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -29,4 +30,22 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/dragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/dragon"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/character"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 </android.support.constraint.ConstraintLayout>
