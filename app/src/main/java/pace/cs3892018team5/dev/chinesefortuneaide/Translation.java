@@ -1,6 +1,7 @@
 package pace.cs3892018team5.dev.chinesefortuneaide;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 
 public class Translation extends Fortunes {
@@ -10,7 +11,8 @@ public class Translation extends Fortunes {
     public  Translation()
     {
         super("", "");
-
+        myFortunes = new ArrayList<Fortunes>();
+        setFortune();
     }
 
 //Fortune Class
@@ -33,6 +35,15 @@ public class Translation extends Fortunes {
         myFortunes.add(new Fortunes("Be assertive when decisive action is needed", "在需要果断行动时坚持自信"));
         myFortunes.add(new Fortunes("Sing and rejoice, fortune is smiling on you", "唱歌欢乐，财富对你微笑"));
         myFortunes.add(new Fortunes("The smart thing to do is to begin trusting your intuitions", "聪明的事情是开始相信你的直觉\n"));
+
+    }
+
+    public String printFortune()
+    {
+        setFortune();
+        Random ranNum = new Random();
+        int index = ranNum.nextInt(myFortunes.size());
+        return myFortunes.get(index).getRandomFortune();
 
     }
 
