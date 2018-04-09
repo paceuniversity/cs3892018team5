@@ -93,8 +93,10 @@ public class Tab2 extends Fragment {
                 AlertDialog alert = a_builder.create();
                 String[] fortune = {"Today will be a good day", "There will be a happy romance for you shortly", "Good news from afar may bring you a welcome visitor"};
                 Random ranNum = new Random();
+                Translation translationObject = new Translation();
                 int index = ranNum.nextInt(2);
-                alert.setTitle(fortune[index]);
+                //alert.setTitle(fortune[index]);
+                alert.setTitle(translationObject.printFortune());
                 alert.show();
             }
         }
