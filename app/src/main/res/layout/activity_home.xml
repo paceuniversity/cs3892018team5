@@ -17,7 +17,7 @@
         android:scaleType="fitCenter"
         android:src="@drawable/cookie"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="28dp" />
+        tools:layout_editor_absoluteY="16dp" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:scaleType="fitEnd"
         app:srcCompat="@drawable/dragon"
-        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
