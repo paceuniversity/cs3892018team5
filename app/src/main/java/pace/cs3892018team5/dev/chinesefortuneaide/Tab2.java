@@ -96,7 +96,9 @@ public class Tab2 extends Fragment {
                 Translation translationObject = new Translation();
                 int index = ranNum.nextInt(2);
                 //alert.setTitle(fortune[index]);
-                alert.setTitle(translationObject.printFortune());
+                //alert.setTitle(translationObject.printFortune());
+                alert.setTitle("Fortune of The Day");
+                alert.setMessage(translationObject.printFortune());
                 alert.show();
             }
         }

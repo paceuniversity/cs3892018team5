@@ -24,7 +24,7 @@ public class Fortunes {
 
     public String getRandomFortune()
     {
-        return  fortune1 + "\n" + fortune2;
+        return  fortune1 + "\n" + "Translation in Chinese: " + fortune2;
     }
 
 
