@@ -21,6 +21,10 @@
         <activity
             android:name=".Quiz_Screen_Easy1"
             android:label="@string/title_activity_quiz__screen__easy1"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Quiz1_Screen"
+            android:label="@string/title_activity_quiz1__screen"
             android:theme="@style/AppTheme"></activity>
     </application>
 
