@@ -1,12 +1,14 @@
 package pace.cs3892018team5.dev.chinesefortuneaide;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -58,6 +60,8 @@ public class Tab5 extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
@@ -65,6 +69,20 @@ public class Tab5 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =inflater.inflate(R.layout.fragment_tab5, container, false);
+
+        Button myButton = (Button) view.findViewById(R.id.btnBeginner);
+        myButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), Quiz_Screen_Easy1.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+
         return view;
     }
 
