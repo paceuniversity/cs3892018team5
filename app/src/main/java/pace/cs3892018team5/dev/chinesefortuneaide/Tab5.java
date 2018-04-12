@@ -75,7 +75,7 @@ public class Tab5 extends Fragment {
             @Override
 
             public void onClick(View v){
-                Intent intent = new Intent(getActivity(), Quiz_Screen_Easy1.class);
+                Intent intent = new Intent(getActivity(), Quiz1_Screen.class);
                 startActivity(intent);
 
             }
