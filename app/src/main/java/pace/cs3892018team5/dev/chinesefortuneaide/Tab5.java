@@ -1,12 +1,14 @@
 package pace.cs3892018team5.dev.chinesefortuneaide;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -64,8 +66,25 @@ public class Tab5 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab5, container, false);
+        View view =inflater.inflate(R.layout.fragment_tab5, container, false);
+
+
+        Button myButton2 = (Button) view.findViewById(R.id.btnBeginner2);
+        myButton2.setOnClickListener(new View.OnClickListener(){
+            @Override
+
+            public void onClick(View v){
+                Intent intent = new Intent(getActivity(), Quiz2_Screen.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+
+        return view;
     }
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
