@@ -15,41 +15,46 @@
         app:srcCompat="@drawable/dragon" />
 
     <TextView
+        android:id="@+id/grade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="24sp"
+        android:layout_above="@+id/outOf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
         android:padding="16dp"
-        android:textColor="#000"
-        android:layout_margin="16dp"
-        android:id="@+id/grade"
-        android:text="Congratulations"/>
+        android:text="Congratulations"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
-        android:layout_below="@+id/grade"
+        android:id="@+id/outOf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:padding="16dp"
-        android:textColor="#000"
-        android:layout_margin="16dp"
+        android:layout_above="@+id/retry"
+        android:layout_alignStart="@+id/grade"
+        android:layout_marginBottom="68dp"
 
-        android:id="@+id/outOf"
-        android:text="You scored 8 out of 9"/>
+        android:padding="16dp"
+        android:text="You scored 8 out of 9"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
 
     <Button
-        android:layout_below="@+id/outOf"
         android:id="@+id/retry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Retry Quiz"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:background="@android:color/holo_orange_light"
         android:padding="8dp"
-        android:layout_margin="4dp"
+        android:text="Retry Quiz"
         android:textColor="#fff"
-        android:background="#d2352a"
         android:textSize="18sp"
-        android:layout_centerHorizontal="true"/>
+        android:textStyle="bold" />
 
 </RelativeLayout>
 
