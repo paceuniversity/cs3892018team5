@@ -17,12 +17,12 @@
         <ImageButton
 
             android:id="@+id/btnFortune"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:adjustViewBounds="false"
-            android:background="@drawable/cookie"
+            android:background="@drawable/fortune"
             android:gravity="center" />
     </RelativeLayout>
 

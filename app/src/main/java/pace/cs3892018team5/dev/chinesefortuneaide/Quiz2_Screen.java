@@ -38,6 +38,8 @@ public class Quiz2_Screen extends AppCompatActivity {
         Firebase.setAndroidContext(this);
         setContentView(R.layout.activity_quiz2__screen);
 
+
+
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         // setSupportActionBar(toolbar);
 
@@ -51,6 +53,7 @@ public class Quiz2_Screen extends AppCompatActivity {
 
 
         updateQuestion();
+        setupEndActivityButton();
 
         //Button 1
         mButtonChoice1.setOnClickListener(new View.OnClickListener() {
@@ -109,16 +112,22 @@ public class Quiz2_Screen extends AppCompatActivity {
                     }
 
 
+
                 Intent i = new Intent(Quiz2_Screen.this, ResultActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putInt("finalScore", mScore);
                 i.putExtras(bundle);
                 Quiz2_Screen.this.finish();
                 startActivity(i);
+
+
+
                 }
 
 
         });
+
+
     }
 
 
@@ -221,7 +230,23 @@ public class Quiz2_Screen extends AppCompatActivity {
 
             }
         });
+
         mQuestionNumber++;
     }
+    //back to fragment button
+
+
+    private void setupEndActivityButton(){
+        Button btn = (Button) findViewById(R.id.quit);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+
+            }
+
+        });
+    }
+
 }
 

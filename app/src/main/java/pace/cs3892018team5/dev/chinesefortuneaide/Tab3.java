@@ -134,6 +134,46 @@ public class Tab3 extends Fragment {
                 " ENG:they"));
         wordArrayList.add(new word("CHS:它" ,
                 " ENG:it"));
+        wordArrayList.add(new word("CHS:它的" ,
+                " ENG:its"));
+        wordArrayList.add(new word("CHS:说" ,
+                " ENG:say"));
+        wordArrayList.add(new word("CHS:谁" ,
+                " ENG:who"));
+        wordArrayList.add(new word("CHS:什么" ,
+                " ENG:what"));
+        wordArrayList.add(new word("CHS:做" ,
+                " ENG:make"));
+        wordArrayList.add(new word("CHS:什么时候" ,
+                " ENG:when"));
+        wordArrayList.add(new word("CHS:能/可以" ,
+                " ENG:can"));
+        wordArrayList.add(new word("CHS:如果" ,
+                " ENG:if"));
+        wordArrayList.add(new word("CHS:其他" ,
+                " ENG:other"));
+        wordArrayList.add(new word("CHS:男人" ,
+                " ENG:man"));
+        wordArrayList.add(new word("CHS:女人" ,
+                " ENG:woman"));
+        wordArrayList.add(new word("CHS:去" ,
+                " ENG:go"));
+        wordArrayList.add(new word("CHS:年" ,
+                " ENG:year"));
+        wordArrayList.add(new word("CHS:知道" ,
+                " ENG:know"));
+        wordArrayList.add(new word("CHS:请" ,
+                " ENG:please"));
+        wordArrayList.add(new word("CHS:收到" ,
+                " ENG:get"));
+        wordArrayList.add(new word("CHS:工作" ,
+                " ENG:work"));
+        wordArrayList.add(new word("CHS:使用" ,
+                " ENG:use"));
+        wordArrayList.add(new word("CHS:喜欢" ,
+                " ENG:like"));
+        wordArrayList.add(new word("CHS:肉" ,
+                " ENG:meat"));
 
 
 
