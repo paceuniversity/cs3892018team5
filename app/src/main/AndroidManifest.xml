@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pace.cs3892018team5.dev.chinesefortuneaide">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:background="#CD3C3C"
@@ -19,13 +21,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Quiz_Screen_Easy1"
-            android:label="@string/title_activity_quiz__screen__easy1"
+            android:name=".Quiz2_Screen"
+            android:label="@string/title_activity_quiz2__screen"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".Quiz1_Screen"
-            android:label="@string/title_activity_quiz1__screen"
-            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".ResultActivity"></activity>
+       
     </application>
 
 </manifest>

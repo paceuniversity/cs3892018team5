@@ -60,8 +60,6 @@ public class Tab5 extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
-
     }
 
     @Override
@@ -70,12 +68,13 @@ public class Tab5 extends Fragment {
         // Inflate the layout for this fragment
         View view =inflater.inflate(R.layout.fragment_tab5, container, false);
 
-        Button myButton = (Button) view.findViewById(R.id.btnBeginner);
-        myButton.setOnClickListener(new View.OnClickListener(){
+
+        Button myButton2 = (Button) view.findViewById(R.id.btnBeginner2);
+        myButton2.setOnClickListener(new View.OnClickListener(){
             @Override
 
             public void onClick(View v){
-                Intent intent = new Intent(getActivity(), Quiz1_Screen.class);
+                Intent intent = new Intent(getActivity(), Quiz2_Screen.class);
                 startActivity(intent);
 
             }
@@ -85,6 +84,7 @@ public class Tab5 extends Fragment {
 
         return view;
     }
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
