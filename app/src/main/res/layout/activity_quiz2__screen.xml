@@ -100,7 +100,9 @@
         android:background="#B71C1C"
         android:padding="8dp"
         android:text="quit"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+
+        />
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
