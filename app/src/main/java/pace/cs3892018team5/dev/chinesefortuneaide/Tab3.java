@@ -1,6 +1,9 @@
 package pace.cs3892018team5.dev.chinesefortuneaide;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.ContextWrapper;
+import android.content.res.AssetManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,8 +14,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.nio.file.NoSuchFileException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+
 
 
 /**
@@ -31,13 +41,14 @@ public class Tab3 extends Fragment {
 
 
 
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
 
-    public Tab3() {
+    public Tab3()  {
         // Required empty public constructor
     }
 
@@ -50,7 +61,7 @@ public class Tab3 extends Fragment {
      * @return A new instance of fragment Tab3.
      */
     // TODO: Rename and change types and number of parameters
-    public static Tab3 newInstance(String param1, String param2) {
+    public static Tab3 newInstance(String param1, String param2)  {
         Tab3 fragment = new Tab3();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
@@ -77,13 +88,58 @@ public class Tab3 extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_tab3, container, false);
 
-        String[] word = {"跑", "Run","走","Walk","飞","Fly","跳","Jump","想","Think","读","Read"};
 
-        ListView listWord = view.findViewById(R.id.list_word);
+        ListView wordList = view.findViewById(R.id.list_word);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, word);
+        ArrayList<word> wordArrayList = new ArrayList<>();
 
-        listWord.setAdapter(adapter);
+
+        wordArrayList.add(new word("CHS:走",
+                " ENG:walk"));
+        wordArrayList.add(new word("CHS:跑" ,
+                " ENG:run"));
+        wordArrayList.add(new word("CHS:跳" ,
+                " ENG:jump"));
+        wordArrayList.add(new word("CHS:看" ,
+                " ENG:look"));
+        wordArrayList.add(new word("CHS:读" ,
+                " ENG:read"));
+        wordArrayList.add(new word("CHS:想" ,
+                " ENG:think"));
+        wordArrayList.add(new word("CHS:打" ,
+                " ENG:hit"));
+        wordArrayList.add(new word("CHS:笑" ,
+                " ENG:laugh"));
+        wordArrayList.add(new word("CHS:我" ,
+                " ENG:I"));
+        wordArrayList.add(new word("CHS:你" ,
+                " ENG:you"));
+        wordArrayList.add(new word("CHS:他" ,
+                " ENG:he"));
+        wordArrayList.add(new word("CHS:她" ,
+                " ENG:she"));
+        wordArrayList.add(new word("CHS:我的" ,
+                " ENG:my"));
+        wordArrayList.add(new word("CHS:你的" ,
+                " ENG:your"));
+        wordArrayList.add(new word("CHS:他的" ,
+                " ENG:his"));
+        wordArrayList.add(new word("CHS:她的" ,
+                " ENG:her"));
+        wordArrayList.add(new word("CHS:我们" ,
+                " ENG:we"));
+        wordArrayList.add(new word("CHS:你们" ,
+                " ENG:you"));
+        wordArrayList.add(new word("CHS:他们" ,
+                " ENG:they"));
+        wordArrayList.add(new word("CHS:它" ,
+                " ENG:it"));
+
+
+
+        WordListAdapter  adapter = new WordListAdapter(getActivity().getApplicationContext(),R.layout.adapter_word, wordArrayList);
+        wordList.setAdapter(adapter);
+
 
         // Inflate the layout for this fragment
         return view;
