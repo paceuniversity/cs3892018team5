@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -66,16 +68,13 @@ public class Tab4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tab4, container, false);
-
-        String[] facts = {"China is officially known as the People's Republic of China.",
-                        "China has the largest population in the world, with over 1.3 billion people (1,343,239,923) as of July 2012.",
-                        "China belongs to the continent of Asia. Bordering countries include Afghanistan, Bhutan, Burma, India, Kazakhstan, North Korea, Kyrgyzstan, Laos, Mongolia, Nepal, Pakistan, Russia, Tajikistan, and Vietnam.",
-                        "The summit of Mt Everest marks the border between China and Nepal.",
-                        "There are many different languages spoken in China, including Mandarin, Yue, Wu, Minbei, Minnan, Xiang, Gan and Hakka."};
-
         ListView listFact = view.findViewById(R.id.list_fact);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1,facts);
+        ArrayList<fact> factArrayList = new ArrayList<>();
+
+        factArrayList.add(new fact("chinese map", R.drawable.chinese_map));
+
+        FactListAdapter adapter = new FactListAdapter(getActivity().getApplicationContext(), R.layout.adapter_fact, factArrayList);
 
         listFact.setAdapter(adapter);
         // Inflate the layout for this fragment
