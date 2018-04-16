@@ -11,14 +11,22 @@
         android:id="@+id/word"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/backgroud">
+        android:background="@drawable/spalsh_background">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitEnd"
+            android:src="@drawable/dragon" />
 
         <ListView
             android:id="@+id/list_word"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true" />
+            android:layout_alignParentTop="true"
+            android:visibility="visible" />
     </RelativeLayout>
 
 </FrameLayout>

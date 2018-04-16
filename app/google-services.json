@@ -23,14 +23,6 @@
           }
         },
         {
-          "client_id": "568269514999-1sok7l6po60ohgqs2igh1ns7rrsvjoph.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "pace.cs3892018team5.dev.chinesefortuneaide",
-            "certificate_hash": "17884371e6f28b08309890cf9ce1f8df2b3a4375"
-          }
-        },
-        {
           "client_id": "568269514999-osa5jh8c99lr7v6kst7mavd0006rhbt1.apps.googleusercontent.com",
           "client_type": 3
         }
