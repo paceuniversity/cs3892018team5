@@ -14,6 +14,7 @@ public class ResultActivity extends AppCompatActivity {
     TextView mGrade, mFinalScore;
     Button mRetryButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,13 +26,13 @@ public class ResultActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         int score = bundle.getInt("finalScore");
 
-        mFinalScore.setText("You scored " + score + " out of 5" );
+        mFinalScore.setText("You scored " + score + " out of 4" );
 
-        if (score == 9){
+        if (score == 4){
             mGrade.setText("Outstanding");
-        }else if (score == 8){
+        }else if (score == 3){
             mGrade.setText("Good Work");
-        }else if (score == 7) {
+        }else if (score == 2) {
             mGrade.setText("Good Effort");
         }else {
             mGrade.setText("Go over your notes");
@@ -44,7 +45,6 @@ public class ResultActivity extends AppCompatActivity {
                 ResultActivity.this.finish();
             }
         });
-
     }
 }
 
