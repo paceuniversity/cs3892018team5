@@ -94,86 +94,86 @@ public class Tab3 extends Fragment {
         ArrayList<word> wordArrayList = new ArrayList<>();
 
 
-        wordArrayList.add(new word("CHS:走",
-                " ENG:walk"));
-        wordArrayList.add(new word("CHS:跑" ,
-                " ENG:run"));
-        wordArrayList.add(new word("CHS:跳" ,
-                " ENG:jump"));
-        wordArrayList.add(new word("CHS:看" ,
-                " ENG:look"));
-        wordArrayList.add(new word("CHS:读" ,
-                " ENG:read"));
-        wordArrayList.add(new word("CHS:想" ,
-                " ENG:think"));
-        wordArrayList.add(new word("CHS:打" ,
-                " ENG:hit"));
-        wordArrayList.add(new word("CHS:笑" ,
-                " ENG:laugh"));
-        wordArrayList.add(new word("CHS:我" ,
-                " ENG:I"));
-        wordArrayList.add(new word("CHS:你" ,
-                " ENG:you"));
-        wordArrayList.add(new word("CHS:他" ,
-                " ENG:he"));
-        wordArrayList.add(new word("CHS:她" ,
-                " ENG:she"));
-        wordArrayList.add(new word("CHS:我的" ,
-                " ENG:my"));
-        wordArrayList.add(new word("CHS:你的" ,
-                " ENG:your"));
-        wordArrayList.add(new word("CHS:他的" ,
-                " ENG:his"));
-        wordArrayList.add(new word("CHS:她的" ,
-                " ENG:her"));
-        wordArrayList.add(new word("CHS:我们" ,
-                " ENG:we"));
-        wordArrayList.add(new word("CHS:你们" ,
-                " ENG:you"));
-        wordArrayList.add(new word("CHS:他们" ,
-                " ENG:they"));
-        wordArrayList.add(new word("CHS:它" ,
-                " ENG:it"));
-        wordArrayList.add(new word("CHS:它的" ,
-                " ENG:its"));
-        wordArrayList.add(new word("CHS:说" ,
-                " ENG:say"));
-        wordArrayList.add(new word("CHS:谁" ,
-                " ENG:who"));
-        wordArrayList.add(new word("CHS:什么" ,
-                " ENG:what"));
-        wordArrayList.add(new word("CHS:做" ,
-                " ENG:make"));
-        wordArrayList.add(new word("CHS:什么时候" ,
-                " ENG:when"));
-        wordArrayList.add(new word("CHS:能/可以" ,
-                " ENG:can"));
-        wordArrayList.add(new word("CHS:如果" ,
-                " ENG:if"));
-        wordArrayList.add(new word("CHS:其他" ,
-                " ENG:other"));
-        wordArrayList.add(new word("CHS:男人" ,
-                " ENG:man"));
-        wordArrayList.add(new word("CHS:女人" ,
-                " ENG:woman"));
-        wordArrayList.add(new word("CHS:去" ,
-                " ENG:go"));
-        wordArrayList.add(new word("CHS:年" ,
-                " ENG:year"));
-        wordArrayList.add(new word("CHS:知道" ,
-                " ENG:know"));
-        wordArrayList.add(new word("CHS:请" ,
-                " ENG:please"));
-        wordArrayList.add(new word("CHS:收到" ,
-                " ENG:get"));
-        wordArrayList.add(new word("CHS:工作" ,
-                " ENG:work"));
-        wordArrayList.add(new word("CHS:使用" ,
-                " ENG:use"));
-        wordArrayList.add(new word("CHS:喜欢" ,
-                " ENG:like"));
-        wordArrayList.add(new word("CHS:肉" ,
-                " ENG:meat"));
+        wordArrayList.add(new word("走",
+                " walk"));
+        wordArrayList.add(new word("跑" ,
+                " run"));
+        wordArrayList.add(new word("跳" ,
+                " jump"));
+        wordArrayList.add(new word("看" ,
+                " look"));
+        wordArrayList.add(new word("读" ,
+                " read"));
+        wordArrayList.add(new word("想" ,
+                " think"));
+        wordArrayList.add(new word("打" ,
+                " hit"));
+        wordArrayList.add(new word("笑" ,
+                " laugh"));
+        wordArrayList.add(new word("我" ,
+                " I"));
+        wordArrayList.add(new word("你" ,
+                " you"));
+        wordArrayList.add(new word("他" ,
+                " he"));
+        wordArrayList.add(new word("她" ,
+                " she"));
+        wordArrayList.add(new word("我的" ,
+                " my"));
+        wordArrayList.add(new word("你的" ,
+                " your"));
+        wordArrayList.add(new word("他的" ,
+                " his"));
+        wordArrayList.add(new word("她的" ,
+                " her"));
+        wordArrayList.add(new word("我们" ,
+                " we"));
+        wordArrayList.add(new word("你们" ,
+                " you"));
+        wordArrayList.add(new word("他们" ,
+                " they"));
+        wordArrayList.add(new word("它" ,
+                " it"));
+        wordArrayList.add(new word("它的" ,
+                " its"));
+        wordArrayList.add(new word("说" ,
+                " say"));
+        wordArrayList.add(new word("谁" ,
+                " who"));
+        wordArrayList.add(new word("什么" ,
+                " what"));
+        wordArrayList.add(new word("做" ,
+                " make"));
+        wordArrayList.add(new word("什么时候" ,
+                " when"));
+        wordArrayList.add(new word("能/可以" ,
+                " can"));
+        wordArrayList.add(new word("如果" ,
+                " if"));
+        wordArrayList.add(new word("其他" ,
+                " other"));
+        wordArrayList.add(new word("男人" ,
+                " man"));
+        wordArrayList.add(new word("女人" ,
+                " woman"));
+        wordArrayList.add(new word("去" ,
+                " go"));
+        wordArrayList.add(new word("年" ,
+                " year"));
+        wordArrayList.add(new word("知道" ,
+                " know"));
+        wordArrayList.add(new word("请" ,
+                " please"));
+        wordArrayList.add(new word("收到" ,
+                " get"));
+        wordArrayList.add(new word("工作" ,
+                " work"));
+        wordArrayList.add(new word("使用" ,
+                " use"));
+        wordArrayList.add(new word("喜欢" ,
+                " like"));
+        wordArrayList.add(new word("肉" ,
+                " meat"));
 
 
 

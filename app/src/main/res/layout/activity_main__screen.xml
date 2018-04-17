@@ -10,14 +10,14 @@
 
 
     <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id = "@+id/tablayout"
-        android:background="#cd3c3c"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
+        android:background="#cd3c3c"
         android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:tabMode="fixed"
-        android:theme = "@style/ThemeOverlay.AppCompat.Dark.ActionBar"
 
         >
 
