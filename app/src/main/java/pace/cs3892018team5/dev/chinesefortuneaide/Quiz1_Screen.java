@@ -71,21 +71,8 @@ public class Quiz1_Screen extends AppCompatActivity {
                     updateScore(mScore);
                     updateQuestion();
                 }
-
-                Intent i = new Intent(Quiz1_Screen.this, ResultActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putInt("finalScore", mScore);
-                i.putExtras(bundle);
-                Quiz1_Screen.this.finish();
-                startActivity(i);
-
-
-
                 }
         });
-
-
-
     }
 
     private void updateScore(int point) {
