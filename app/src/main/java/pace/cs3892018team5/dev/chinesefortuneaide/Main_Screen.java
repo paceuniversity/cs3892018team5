@@ -29,11 +29,11 @@ public class Main_Screen extends AppCompatActivity implements  Tab1.OnFragmentIn
        // }, SPLASH_TIME_OUT);
 
         TabLayout tabLayout = (TabLayout)findViewById(R.id.tablayout);
-        tabLayout.addTab(tabLayout.newTab().setText("Main Screen"));
-        tabLayout.addTab(tabLayout.newTab().setText("Fortune"));
-        tabLayout.addTab(tabLayout.newTab().setText("Words"));
-        tabLayout.addTab(tabLayout.newTab().setText("Facts"));
-        tabLayout.addTab(tabLayout.newTab().setText("Quiz"));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_home_black_24dp));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.fortune_icon));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.han_icon));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.book_icon));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.quiz_icon));
 
 
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
