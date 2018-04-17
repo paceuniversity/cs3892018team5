@@ -109,21 +109,10 @@ public class Quiz2_Screen extends AppCompatActivity {
                     mScore = mScore + 1;
                     updateScore(mScore);
 
-                    }
-
-
-
-                Intent i = new Intent(Quiz2_Screen.this, ResultActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putInt("finalScore", mScore);
-                i.putExtras(bundle);
-                Quiz2_Screen.this.finish();
-                startActivity(i);
-
-
-
                 }
 
+
+            }
 
         });
 
@@ -231,7 +220,20 @@ public class Quiz2_Screen extends AppCompatActivity {
             }
         });
 
+        if (mQuestionNumber == 4) {
+
+            Intent i = new Intent(Quiz2_Screen.this, ResultActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putInt("finalScore", mScore);
+            i.putExtras(bundle);
+            Quiz2_Screen.this.finish();
+            startActivity(i);
+
+
+        }
+
         mQuestionNumber++;
+
     }
     //back to fragment button
 

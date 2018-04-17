@@ -66,14 +66,25 @@ public class Tab5 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =inflater.inflate(R.layout.fragment_tab5, container, false);
+        View view = inflater.inflate(R.layout.fragment_tab5, container, false);
+        Button myButton2 = (Button) view.findViewById(R.id.btnBeginner2);
+        Button myButton = (Button) view.findViewById(R.id.btnBeginner);
 
-
-        Button myButton2 = (Button) view.findViewById(R.id.btnBeginner);
-        myButton2.setOnClickListener(new View.OnClickListener(){
+        myButton2.setOnClickListener(new View.OnClickListener() {
             @Override
 
-            public void onClick(View v){
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Quiz2_Screen.class);
+                startActivity(intent);
+
+            }
+
+        });
+
+        myButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), Quiz1_Screen.class);
                 startActivity(intent);
 
@@ -82,7 +93,12 @@ public class Tab5 extends Fragment {
         });
 
 
+
+
+
+
         return view;
+
     }
 
 

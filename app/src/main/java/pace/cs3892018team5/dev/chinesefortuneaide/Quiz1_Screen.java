@@ -71,8 +71,16 @@ public class Quiz1_Screen extends AppCompatActivity {
                     updateScore(mScore);
                     updateQuestion();
                 }
+
+
+
+
+
                 }
         });
+
+
+
     }
 
     private void updateScore(int point) {
@@ -82,7 +90,7 @@ public class Quiz1_Screen extends AppCompatActivity {
     }
 
     public void updateQuestion() {
-        mQuestionRef = new Firebase("https://cs389firebaseproject.firebaseio.com/"+mQuestionNumber +"/questione");
+        mQuestionRef = new Firebase("https://cs389firebaseproject.firebaseio.com/" + mQuestionNumber + "/questione");
         mQuestionRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -96,7 +104,7 @@ public class Quiz1_Screen extends AppCompatActivity {
 
             }
         });
-        mChoice1Ref = new Firebase("https://cs389firebaseproject.firebaseio.com/"+mQuestionNumber +"/choice1e");
+        mChoice1Ref = new Firebase("https://cs389firebaseproject.firebaseio.com/" + mQuestionNumber + "/choice1e");
         mChoice1Ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -112,7 +120,7 @@ public class Quiz1_Screen extends AppCompatActivity {
             }
         });
 
-        mChoice2Ref = new Firebase("https://cs389firebaseproject.firebaseio.com/"+mQuestionNumber +"/choice2e");
+        mChoice2Ref = new Firebase("https://cs389firebaseproject.firebaseio.com/" + mQuestionNumber + "/choice2e");
         mChoice2Ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -129,7 +137,7 @@ public class Quiz1_Screen extends AppCompatActivity {
         });
 
 
-        mAnswerRef = new Firebase("https://cs389firebaseproject.firebaseio.com/"+mQuestionNumber+"/answere");
+        mAnswerRef = new Firebase("https://cs389firebaseproject.firebaseio.com/" + mQuestionNumber + "/answere");
         mAnswerRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -142,7 +150,16 @@ public class Quiz1_Screen extends AppCompatActivity {
             }
         });
         mQuestionNumber++;
+
+        if (mQuestionNumber == 6) {
+
+            Intent i = new Intent(Quiz1_Screen.this, ResultActivity2.class);
+            Bundle bundle = new Bundle();
+            bundle.putInt("finalScore", mScore);
+            i.putExtras(bundle);
+            Quiz1_Screen.this.finish();
+            startActivity(i);
+        }
+
     }
-
-
 }
