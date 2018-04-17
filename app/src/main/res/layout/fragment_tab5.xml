@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/spalsh_background"
     tools:context=".Tab5">
 
     <!-- TODO: Update blank fragment layout -->
@@ -17,36 +16,34 @@
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:scaleType="fitEnd"
-            android:src="@drawable/dragon" />
+            />
 
         <Button
             android:id="@+id/btnBeginner2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/btnBeginner3"
+            android:layout_below="@+id/btnBeginner"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="85dp"
+            android:layout_marginTop="58dp"
             android:text="Intermediate" />
 
         <Button
             android:id="@+id/btnBeginner3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/btnBeginner"
-            android:layout_marginBottom="73dp"
+            android:layout_below="@+id/btnBeginner2"
+            android:layout_marginTop="51dp"
             android:text="Difficult" />
 
         <Button
             android:id="@+id/btnBeginner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/btnBeginner2"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="43dp"
+            android:layout_marginTop="106dp"
             android:text="Beginner" />
     </RelativeLayout>
 
