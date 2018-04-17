@@ -3,6 +3,7 @@ package pace.cs3892018team5.dev.chinesefortuneaide;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,7 @@ public class FactListAdapter extends ArrayAdapter<fact> {
         TextView tvFact = (TextView) convertView.findViewById(R.id.fact);
         ImageView img = (ImageView) convertView.findViewById(R.id.fact_image);
 
+        tvFact.setMovementMethod(new ScrollingMovementMethod());
         tvFact.setText(fact);
         img.setImageResource(image);
 

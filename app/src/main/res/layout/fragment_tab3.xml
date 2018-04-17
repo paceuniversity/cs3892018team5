@@ -15,32 +15,36 @@
         <ListView
             android:id="@+id/list_word"
             android:layout_width="325dp"
-            android:layout_height="268dp"
-            android:layout_alignParentBottom="true"
+            android:layout_height="298dp"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="31dp"
-            android:layout_marginEnd="29dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginStart="31dp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
             app:layout_constraintStart_toStartOf="parent" />
-    </android.support.constraint.ConstraintLayout>
 
-    <RelativeLayout
-        android:id="@+id/word"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/imageView4"
+        <RelativeLayout
+            android:id="@+id/word"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:scaleType="fitEnd"
-            android:src="@drawable/dragon" />
+            android:layout_height="wrap_content">
 
-    </RelativeLayout>
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitEnd"
+                android:src="@drawable/dragon"
+                android:theme="@style/AlertDialog.AppCompat.Light"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>

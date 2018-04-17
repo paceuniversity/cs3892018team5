@@ -72,7 +72,13 @@ public class Tab4 extends Fragment {
 
         ArrayList<fact> factArrayList = new ArrayList<>();
 
-        factArrayList.add(new fact("chinese map", R.drawable.chinese_map));
+        factArrayList.add(new fact("China has great physical diversity. The eastern plains and southern coasts of the country consist of fertile lowlands and foothills and is the location of most of China's agricultural output and human population. The southern areas of the country (South of the Yangtze River) consist of hilly and mountainous terrain. The west and north of the country are dominated by sunken basins (such as the Gobi and the Taklamakan), rolling plateaus, and towering massifs. It contains part of the highest tableland on earth, the Tibetan Plateau, and has much lower agricultural potential and population.", R.drawable.chinese_map));
+        factArrayList.add(new fact("The Spring Festival falls on the 1st day of the 1st lunar month, often one month later than the Gregorian calendar. It originated in the Shang Dynasty (c. 1600 BC-c. 1100 BC) from the people's sacrifice to gods and ancestors at the end of an old year and the beginning of a new one.", R.drawable.spring_festival));
+        factArrayList.add(new fact("The Duanwu Festival, also often known, especially in the West, as the Dragon Boat Festival, is a traditional holiday originating in China, occurring near the summer solstice. It is also known as Zhongxiao Festival (Chinese: 忠孝節; pinyin: Zhōngxiàojié), commemorating fealty and filial piety. The festival now occurs on the 5th day of the 5th month of the traditional Chinese calendar, which is the source of the festival's alternative name, the Double Fifth Festival",R.drawable.dragon_boat));
+        factArrayList.add(new fact("Chinese people celebrate the festival with many traditional and meaningful activities, such as eating dinner with family, hanging lanterns, guessing lantern riddles, and worshipping the moon. Since 2008, the festival has been a 3-day public holiday in mainland China. In 2018, the holiday will be September 24–6, combining the National Day holiday and a three weekend days.", R.drawable.moon_cake));
+        factArrayList.add(new fact("As the landmark of Guangzhou, the Canton Tower (Guangzhou Tower) lies at the south bank of the Pearl River, facing Haixinsha Island to the north. As the highest TV tower in China and the third highest in the world, the tower has been a must-see scenic spot in Guangzhou. From the top, visitors have a birds-eye view of the whole city. Inside the tower are wonderful entertainment items, romantic restaurants with delicious food and several fine lookout platforms for shooting photos, some of them holding many top world records.", R.drawable.canton_tower));
+
+
 
         FactListAdapter adapter = new FactListAdapter(getActivity().getApplicationContext(), R.layout.adapter_fact, factArrayList);
 
