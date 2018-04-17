@@ -69,12 +69,12 @@ public class Tab5 extends Fragment {
         View view =inflater.inflate(R.layout.fragment_tab5, container, false);
 
 
-        Button myButton2 = (Button) view.findViewById(R.id.btnBeginner2);
+        Button myButton2 = (Button) view.findViewById(R.id.btnBeginner);
         myButton2.setOnClickListener(new View.OnClickListener(){
             @Override
 
             public void onClick(View v){
-                Intent intent = new Intent(getActivity(), Quiz2_Screen.class);
+                Intent intent = new Intent(getActivity(), Quiz1_Screen.class);
                 startActivity(intent);
 
             }

@@ -21,11 +21,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Quiz2_Screen"
-            android:label="@string/title_activity_quiz2__screen"
+        android:name=".Quiz2_Screen"
+        android:label="@string/title_activity_quiz2__screen"
+        android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Quiz1_Screen"
+            android:label="@string/title_activity_quiz1__screen"
             android:theme="@style/AppTheme" />
         <activity android:name=".ResultActivity"></activity>
-       
+
     </application>
 
 </manifest>
