@@ -68,10 +68,5 @@ public class Main_Screen extends AppCompatActivity implements  Tab1.OnFragmentIn
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.m_setting,menu);
-        return true;
-    }
+
 }
