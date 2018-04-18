@@ -27,7 +27,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/score"
+            android:id="@+id/score1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -39,7 +39,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/question"
+            android:id="@+id/question1"
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:layout_below="@+id/score_text"
@@ -63,7 +63,7 @@
             android:layout_marginBottom="190dp"
             android:background="#0091EA"
             android:padding="8dp"
-            android:text="`True"
+            android:text="True"
             android:textColor="#fff"
             android:textStyle="bold" />
 
@@ -88,6 +88,7 @@
 
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
             android:background="@android:color/holo_orange_light"
             android:padding="8dp"
             android:text="quit"
@@ -104,7 +105,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_quiz2__screen" />
+    <include layout="@layout/content_quiz1__screen" />
 
 
 
