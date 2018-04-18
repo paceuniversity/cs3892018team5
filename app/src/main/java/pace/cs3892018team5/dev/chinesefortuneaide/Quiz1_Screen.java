@@ -38,8 +38,8 @@ public class Quiz1_Screen extends AppCompatActivity {
        // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
          //setSupportActionBar(toolbar);
 
-        mScoreView = (TextView)findViewById(R.id.score);
-        mQuestion = (TextView)findViewById(R.id.question);
+        mScoreView = (TextView)findViewById(R.id.score1);
+        mQuestion = (TextView)findViewById(R.id.question1);
 
         myButtonTrue = (Button)findViewById(R.id.btnTrue);
         myButtonFalse = (Button)findViewById(R.id.btnFalse);
