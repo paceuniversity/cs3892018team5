@@ -38,7 +38,7 @@
             android:layout_marginBottom="68dp"
 
             android:padding="16dp"
-            android:text="You scored 8 out of 9"
+            android:text="You scored 1 out of 3"
             android:textAlignment="center"
             android:textColor="@android:color/background_light"
             android:textSize="20sp" />
