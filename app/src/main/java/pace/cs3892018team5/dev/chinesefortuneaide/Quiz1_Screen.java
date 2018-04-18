@@ -24,9 +24,9 @@ public class Quiz1_Screen extends AppCompatActivity {
 
     public Button myButtonTrue, myButtonFalse;
 
-     public int mScore = 0;
-     public String mAnswer;
-     public int mQuestionNumber = 4;
+     private int mScore = 0;
+     private String mAnswer;
+     private int mQuestionNumber = 4;
 
     public Firebase mQuestionRef, mChoice1Ref, mChoice2Ref,mAnswerRef;
 
@@ -38,8 +38,8 @@ public class Quiz1_Screen extends AppCompatActivity {
        // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
          //setSupportActionBar(toolbar);
 
-        mScoreView = (TextView)findViewById(R.id.score1);
-        mQuestion = (TextView)findViewById(R.id.question1);
+        mScoreView = (TextView)findViewById(R.id.score);
+        mQuestion = (TextView)findViewById(R.id.question);
 
         myButtonTrue = (Button)findViewById(R.id.btnTrue);
         myButtonFalse = (Button)findViewById(R.id.btnFalse);
@@ -70,16 +70,10 @@ public class Quiz1_Screen extends AppCompatActivity {
                     mScore = mScore + 1;
                     updateScore(mScore);
                     updateQuestion();
-                }
-                else{
+                } else {
                     updateQuestion();
                 }
-
-
-
-
-
-                }
+            }
         });
 
 
@@ -152,9 +146,8 @@ public class Quiz1_Screen extends AppCompatActivity {
 
             }
         });
-        mQuestionNumber++;
 
-        if (mQuestionNumber == 6) {
+        if (mQuestionNumber == 7) {
 
             Intent i = new Intent(Quiz1_Screen.this, ResultActivity2.class);
             Bundle bundle = new Bundle();
@@ -163,6 +156,11 @@ public class Quiz1_Screen extends AppCompatActivity {
             Quiz1_Screen.this.finish();
             startActivity(i);
         }
+        mQuestionNumber++;
+
+
+
+
 
     }
 }
