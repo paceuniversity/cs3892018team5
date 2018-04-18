@@ -20,7 +20,7 @@ public class ResultActivity2 extends AppCompatActivity {
 
             mGrade = (TextView)findViewById(R.id.grade);
             mFinalScore = findViewById(R.id.outOf);
-            mRetryButton = findViewById(R.id.retry);
+            mRetryButton = findViewById(R.id.retry2);
             Bundle bundle = getIntent().getExtras();
             int score = bundle.getInt("finalScore");
 
@@ -39,7 +39,7 @@ public class ResultActivity2 extends AppCompatActivity {
             mRetryButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    startActivity(new Intent(ResultActivity2.this, Quiz2_Screen.class));
+                    startActivity(new Intent(ResultActivity2.this, Quiz1_Screen.class));
                     ResultActivity2.this.finish();
                 }
             });
