@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/spalsh_background"
+    android:background="@drawable/spalsh_new"
     tools:context="pace.cs3892018team5.dev.chinesefortuneaide.Tab4">
 
     <!-- TODO: Update blank fragment layout -->
@@ -15,8 +15,8 @@
 
         <ListView
             android:id="@+id/list_fact"
-            android:layout_width="325dp"
-            android:layout_height="275dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="24dp" />
@@ -28,7 +28,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="fitEnd"
-            android:src="@drawable/dragon" />
+            android:src="@drawable/dragon"
+            android:visibility="gone" />
     </RelativeLayout>
 
 </FrameLayout>

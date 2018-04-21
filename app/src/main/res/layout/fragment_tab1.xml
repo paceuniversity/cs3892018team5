@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/spalsh_background"
+    android:background="@drawable/spalsh_new"
     tools:context="pace.cs3892018team5.dev.chinesefortuneaide.Tab1">
 
     <!-- TODO: Update blank fragment layout -->
@@ -60,7 +60,8 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:scaleType="fitEnd"
-            android:src="@drawable/dragon" />
+            android:src="@drawable/dragon"
+            android:visibility="gone" />
 
     </android.support.constraint.ConstraintLayout>
 
