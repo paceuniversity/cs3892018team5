@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
 import java.util.Random;
 
 
@@ -74,7 +76,9 @@ public class Tab2 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_tab2, container, false);
-        ImageButton myButton = view.findViewById(R.id.btnFortune);
+        final ImageButton myButton = view.findViewById(R.id.btnFortune);
+        final ImageButton myFortuneBox = view.findViewById(R.id.fortuneImage);
+        final TextView myFortune = view.findViewById(R.id.txtFortune);
         Translation translationObject = new Translation();
 
         myButton.setOnClickListener(new View.OnClickListener() {
@@ -98,8 +102,11 @@ public class Tab2 extends Fragment {
                 //alert.setTitle(fortune[index]);
                 //alert.setTitle(translationObject.printFortune());
                 alert.setTitle("Fortune of The Day");
-                alert.setMessage(translationObject.printFortune());
-                alert.show();
+                myButton.setVisibility(View.GONE);
+                myFortuneBox.setVisibility(View.VISIBLE);
+                myFortune.setText(translationObject.printFortune());
+                //alert.setMessage(translationObject.printFortune());
+                //alert.show();
             }
         }
         );
