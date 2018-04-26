@@ -29,7 +29,7 @@ public class Main_Screen extends AppCompatActivity implements  Tab1.OnFragmentIn
        // }, SPLASH_TIME_OUT);
 
         TabLayout tabLayout = (TabLayout)findViewById(R.id.tablayout);
-        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.ic_home_black_24dp));
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.profile_icon));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.fortune_icon));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.han_icon));
         tabLayout.addTab(tabLayout.newTab().setIcon(R.drawable.book_icon));
