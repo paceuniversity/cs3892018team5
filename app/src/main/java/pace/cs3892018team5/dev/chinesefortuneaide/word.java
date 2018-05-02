@@ -1,31 +1,35 @@
 package pace.cs3892018team5.dev.chinesefortuneaide;
 
+import android.media.MediaPlayer;
+
+import java.lang.reflect.Field;
+
 /**
  * Created by johnnychen on 2018/4/16.
  */
 
 public class word {
-    private String CHS;
-    private String ENG;
+    private int img;
+    private int sound;
 
-    public word(String CHS, String ENG) {
-        this.CHS = CHS;
-        this.ENG = ENG;
+    public word(int img, int sound) {
+        this.img = img;
+        this.sound = sound;
     }
 
-    public String getCHS() {
-        return CHS;
+    public int getImg() {
+        return img;
     }
 
-    public void setCHS(String CHS) {
-        this.CHS = CHS;
+    public void setImg(int img) {
+        this.img = img;
     }
 
-    public String getENG() {
-        return ENG;
+    public int getSound() {
+        return sound;
     }
 
-    public void setENG(String ENG) {
-        this.ENG = ENG;
+    public void setSound(int sound) {
+        this.sound = sound;
     }
 }

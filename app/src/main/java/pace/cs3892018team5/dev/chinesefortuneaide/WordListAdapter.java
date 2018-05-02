@@ -1,16 +1,21 @@
 package pace.cs3892018team5.dev.chinesefortuneaide;
 
 import android.content.Context;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,19 +37,28 @@ public class WordListAdapter extends ArrayAdapter<word> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        String CHS = getItem(position).getCHS();
-        String ENG = getItem(position).getENG();
+        int image = getItem(position).getImg();
+        int sound = getItem(position).getSound();
 
-        word word = new word(CHS,ENG);
+        word word = new word(image,sound);
 
         LayoutInflater inflater = LayoutInflater.from(mContext);
         convertView = inflater.inflate(mResource, parent, false);
 
-        TextView tvCHS = (TextView) convertView.findViewById(R.id.CHS);
-        TextView tvENG = (TextView) convertView.findViewById(R.id.ENG);
+        final MediaPlayer player = MediaPlayer.create(getContext(),sound);
 
-        tvCHS.setText(CHS);
-        tvENG.setText(ENG);
+
+        ImageButton btn = (ImageButton) convertView.findViewById(R.id.word_sound);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                player.start();
+            }
+        });
+
+        ImageView img = (ImageView) convertView.findViewById(R.id.word);
+
+        img.setImageResource(image);
 
         return convertView;
     }

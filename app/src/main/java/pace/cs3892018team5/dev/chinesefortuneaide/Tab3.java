@@ -3,6 +3,7 @@ package pace.cs3892018team5.dev.chinesefortuneaide;
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -94,13 +96,29 @@ public class Tab3 extends Fragment {
         ArrayList<word> wordArrayList = new ArrayList<>();
 
 
-
+        wordArrayList.add(new word(R.mipmap.pork_word1, R.raw.a5));
+        wordArrayList.add(new word(R.mipmap.i_word1, R.raw.wo));
+        wordArrayList.add(new word(R.mipmap.beef_word1, R.raw.new_ro));
+        wordArrayList.add(new word(R.mipmap.chicken_word1,R.raw.a6));
+        wordArrayList.add(new word(R.mipmap.you_word1, R.raw.ni));
+        wordArrayList.add(new word(R.mipmap.he_word1, R.raw.ta));
 
 
 
         WordListAdapter  adapter = new WordListAdapter(getActivity().getApplicationContext(),R.layout.adapter_word, wordArrayList);
         wordList.setAdapter(adapter);
 
+        Button myButton = (Button) view.findViewById(R.id.goto_quiz);
+        myButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Quiz2_Screen.class);
+                startActivity(intent);
+
+            }
+
+        });
 
         // Inflate the layout for this fragment
         return view;
